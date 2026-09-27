@@ -1,23 +1,93 @@
 aid: avenzo
+
 name: Avenzo Therapeutics
-description: 'Avenzo Therapeutics is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://avenzotx.com/wp-content/uploads/avenzo-facebook-card-scaled.jpg
+
+description: Avenzo Therapeutics is a biotechnology company focused on developing next‑generation oncology therapies. The firm aims to transform
+  cancer treatment through innovative drug development, targeting solid tumors with validated targets. It maintains a pipeline of clinical trials
+  and scientific research, and engages investors and partners to advance its mission.
+
 url: https://raw.githubusercontent.com/api-evangelist/avenzo/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
-- Company
-apis: []
+- Biotechnology
+- Oncology
+- Therapeutics
+- Clinical Trials
+- Innovation
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Conformance
+  url: conformance/avenzo-conformance.yml
+- type: LLMsTxt
+  url: llms/avenzo-llms.txt
+- type: Hosts
+  url: hosts/avenzo-hosts.yml
+- type: Vendors
+  url: vendors/avenzo-vendors.yml
+- type: Newsroom
+  url: https://avenzotx.com/news/
+- type: DomainSecurity
+  url: security/avenzo-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/avenzo_stock/
+  url: https://avenzotx.com/
+- type: About
+  url: https://avenzotx.com/about-us/
+- type: Documentation
+  url: https://avenzotx.com/pipeline-and-science/
+- type: TermsOfService
+  url: https://avenzotx.com/terms-of-service
+- type: PrivacyPolicy
+  url: https://avenzotx.com/privacy-policy
+
+apis:
+- name: Avenzo Therapeutics API
+  description: API documentation for Avenzo Therapeutics (no machine‑readable spec found)
+  humanURL: https://avenzotx.com/pipeline-and-science/
+  baseURL: null
+  x-coverage:
+    state: unreadable
+    reason: no-machine-readable-spec
+    detail: Documentation pages are HTML only with no machine‑readable OpenAPI or other contract.
+    evidence:
+    - url: https://avenzotx.com/pipeline-and-science/
+      status: 200
+    checked: 2026-09-26
+  aid: avenzo:avenzo-therapeutics-api
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  method: derived
+  generated: '2026-09-26'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: the company publishes developer documentation but serves no machine-readable contract from it
+  evidence:
+  - url: https://forgeglobal.com/avenzo_stock/
+    status: 403
+x-enrichment:
+  date: '2026-09-26'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

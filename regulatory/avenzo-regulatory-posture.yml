@@ -1,0 +1,22 @@
+generated: 2026-09-26
+method: searched
+source: https://avenzotx.com/privacy-policy
+signals:
+  data_subject_request:
+    url: https://avenzotx.com/privacy-policy
+    section: "Your rights"
+    note: Describes data subject rights to access, correction, deletion, restriction and portability.
+    evidence:
+      - source: https://avenzotx.com/privacy-policy
+        http_status: 200
+        fetched: "true"
+        quote: "In some regions (like the European Economic Area and United Kingdom), you have certain rights under applicable data protection laws. These may include the right (i) to request access and obtain a copy of your personal information, (ii) to request rectification or erasure; (iii) to restrict the processing of your personal information; and (iv) if applicable, to data portability."
+  data_retention:
+    url: https://avenzotx.com/privacy-policy
+    section: "Data retention for job applicants"
+    note: Indicates retention of personal data collected via careers page for recruitment purposes.
+    evidence:
+      - source: https://avenzotx.com/privacy-policy
+        http_status: 200
+        fetched: "true"
+        quote: "If we have collected your personal data through our “Careers” page in response to a job opening, you are giving us permission to use and retain your information for the purpose of evaluating your application for employment consideration for the specific position that you applied to, as well as other roles at Avenzo."

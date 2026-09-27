@@ -1,0 +1,12 @@
+generated: '2026-09-26'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://avenzotx.com/privacy-policy/
+sources:
+- https://avenzotx.com/privacy-policy/
+standards:
+- id: gdpr
+  conforms: true
+  evidence: If you are a resident in the European Economic Area or United Kingdom, the processing of any personal data you provide us is governed
+    by the European Union’s General Data Protection Regulation (“ GDPR ”) data privacy laws.
+docs: https://avenzotx.com/privacy-policy/
